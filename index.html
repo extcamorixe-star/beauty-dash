@@ -1033,7 +1033,17 @@ function renderCampDetail(id){
   }
 
   html+='<div class="detail-body">';
-  var campDays=LANDING.filter(function(r){return r.date>=c.start&&r.date<=c.end;})
+    var campDays;
+  if (c.tipo === 'Container' && cont26.length > 0) {
+    var dayMap = {};
+    cont26.forEach(function(r){
+      if (!dayMap[r.date]) dayMap[r.date] = {date:r.date,sessions:0,ctr_w:0,w:0};
+      dayMap[r.date].sessions += r.sessions; dayMap[r.date].ctr_w += r.ctr*r.sessions; dayMap[r.date].w += r.sessions;
+    });
+    campDays = Object.values(dayMap).map(function(d){ d.ctr=d.w>0?Math.round(d.ctr_w/d.w*100)/100:0; return d; }).sort(function(a,b){return a.date<b.date?-1:1;});
+  } else {
+    campDays = LANDING.filter(function(r){return r.date>=c.start&&r.date<=c.end;}).sort(function(a,b){return a.date<b.date?-1:1;});
+  }})
     .sort(function(a,b){return a.date<b.date?-1:1;});
   if (campDays.length){
     html+='<div class="detail-chart-wrap">'+
