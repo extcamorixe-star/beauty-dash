@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -264,6 +264,7 @@ var CAMPANAS = [
   { id:'potinterior', nombre:'Potencia Interior (Segmentado)', mes:'Junio', tipo:'Container', emoji:'💪', containerId:null, start:'2026-06-22', end:'2026-06-28', start25:null, end25:null, landingContainers:null },
   { id:'kbeauty_seg', nombre:'Segmentado K-Beauty',            mes:'Junio', tipo:'Container', emoji:'🇰🇷', containerId:null, start:'2026-06-22', end:'2026-06-28', start25:null, end25:null, landingContainers:null }];
 
+var RAW_MS_BUCKETS=[{date:'2026-03-01',bucket:'b2',prints:955817,clicks:3820,ctr:0.3997},{date:'2026-03-01',bucket:'b3',prints:185088,clicks:1426,ctr:0.7704},{date:'2026-03-02',bucket:'b2',prints:1987205,clicks:4942,ctr:0.2487},{date:'2026-03-02',bucket:'b3',prints:2095303,clicks:2804,ctr:0.1338},{date:'2026-03-03',bucket:'b2',prints:2126597,clicks:5078,ctr:0.2388},{date:'2026-03-03',bucket:'b3',prints:1995534,clicks:3453,ctr:0.173},{date:'2026-03-04',bucket:'b2',prints:2249068,clicks:5107,ctr:0.2271},{date:'2026-03-04',bucket:'b3',prints:1996421,clicks:2790,ctr:0.1398},{date:'2026-03-05',bucket:'b2',prints:2050079,clicks:4993,ctr:0.2436},{date:'2026-03-05',bucket:'b3',prints:1814907,clicks:2399,ctr:0.1322},{date:'2026-03-06',bucket:'b2',prints:2516096,clicks:5652,ctr:0.2246},{date:'2026-03-06',bucket:'b3',prints:1715974,clicks:2364,ctr:0.1378},{date:'2026-03-07',bucket:'b2',prints:2527439,clicks:5617,ctr:0.2222},{date:'2026-03-07',bucket:'b3',prints:1468133,clicks:2289,ctr:0.1559},{date:'2026-03-08',bucket:'b2',prints:2325088,clicks:5561,ctr:0.2392},{date:'2026-03-08',bucket:'b3',prints:1427433,clicks:2406,ctr:0.1686},{date:'2026-03-09',bucket:'b2',prints:1977753,clicks:5302,ctr:0.2681},{date:'2026-03-09',bucket:'b3',prints:117581,clicks:1511,ctr:1.2851},{date:'2026-03-10',bucket:'b2',prints:2276897,clicks:4672,ctr:0.2052},{date:'2026-03-10',bucket:'b3',prints:91272,clicks:908,ctr:0.9948},{date:'2026-03-11',bucket:'b2',prints:1902155,clicks:4213,ctr:0.2215},{date:'2026-03-11',bucket:'b3',prints:95389,clicks:972,ctr:1.019},{date:'2026-03-12',bucket:'b2',prints:1757188,clicks:4033,ctr:0.2295},{date:'2026-03-12',bucket:'b3',prints:73534,clicks:892,ctr:1.213},{date:'2026-03-13',bucket:'b2',prints:2230487,clicks:4967,ctr:0.2227},{date:'2026-03-13',bucket:'b3',prints:98755,clicks:1202,ctr:1.2172},{date:'2026-03-14',bucket:'b2',prints:2164166,clicks:5107,ctr:0.236},{date:'2026-03-14',bucket:'b3',prints:99175,clicks:1289,ctr:1.2997},{date:'2026-03-15',bucket:'b2',prints:1780333,clicks:4370,ctr:0.2455},{date:'2026-03-15',bucket:'b3',prints:88076,clicks:1078,ctr:1.2239},{date:'2026-03-16',bucket:'b2',prints:26097828,clicks:23515,ctr:0.0901},{date:'2026-03-16',bucket:'b3',prints:636937,clicks:3428,ctr:0.5382},{date:'2026-03-17',bucket:'b2',prints:24212516,clicks:96729,ctr:0.3995},{date:'2026-03-17',bucket:'b3',prints:1463260,clicks:7226,ctr:0.4938},{date:'2026-03-18',bucket:'b2',prints:20318766,clicks:65120,ctr:0.3205},{date:'2026-03-18',bucket:'b3',prints:848167,clicks:4939,ctr:0.5823},{date:'2026-03-19',bucket:'b2',prints:17176743,clicks:44311,ctr:0.258},{date:'2026-03-19',bucket:'b3',prints:665241,clicks:3840,ctr:0.5772},{date:'2026-03-20',bucket:'b2',prints:19968690,clicks:53365,ctr:0.2672},{date:'2026-03-20',bucket:'b3',prints:687454,clicks:3359,ctr:0.4886},{date:'2026-03-21',bucket:'b2',prints:17597220,clicks:39177,ctr:0.2226},{date:'2026-03-21',bucket:'b3',prints:512942,clicks:3100,ctr:0.6044},{date:'2026-03-22',bucket:'b2',prints:16675721,clicks:39847,ctr:0.239},{date:'2026-03-22',bucket:'b3',prints:1118236,clicks:4347,ctr:0.3887},{date:'2026-03-23',bucket:'b2',prints:13815690,clicks:10798,ctr:0.0782},{date:'2026-03-23',bucket:'b3',prints:212122,clicks:1329,ctr:0.6265},{date:'2026-03-24',bucket:'b2',prints:2046817,clicks:5757,ctr:0.2813},{date:'2026-03-24',bucket:'b3',prints:186187,clicks:1175,ctr:0.6311},{date:'2026-03-25',bucket:'b2',prints:3848421,clicks:7115,ctr:0.1849},{date:'2026-03-25',bucket:'b3',prints:287346,clicks:1448,ctr:0.5039},{date:'2026-03-26',bucket:'b2',prints:5228727,clicks:8034,ctr:0.1537},{date:'2026-03-26',bucket:'b3',prints:281882,clicks:1358,ctr:0.4818},{date:'2026-03-27',bucket:'b2',prints:5253779,clicks:7976,ctr:0.1518},{date:'2026-03-27',bucket:'b3',prints:228649,clicks:1332,ctr:0.5826},{date:'2026-03-28',bucket:'b2',prints:4843769,clicks:7850,ctr:0.1621},{date:'2026-03-28',bucket:'b3',prints:199222,clicks:1336,ctr:0.6706},{date:'2026-03-29',bucket:'b2',prints:4865167,clicks:8406,ctr:0.1728},{date:'2026-03-29',bucket:'b3',prints:189424,clicks:1383,ctr:0.7301},{date:'2026-03-30',bucket:'b2',prints:21030616,clicks:9622,ctr:0.0458},{date:'2026-03-30',bucket:'b3',prints:226062,clicks:970,ctr:0.4291},{date:'2026-03-31',bucket:'b2',prints:2204631,clicks:5753,ctr:0.261},{date:'2026-03-31',bucket:'b3',prints:288100,clicks:1605,ctr:0.5571},{date:'2026-04-01',bucket:'b2',prints:985337,clicks:2232,ctr:0.2265},{date:'2026-04-01',bucket:'b3',prints:11,clicks:0,ctr:0},{date:'2026-04-02',bucket:'b2',prints:986262,clicks:2256,ctr:0.2287},{date:'2026-04-02',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-03',bucket:'b2',prints:1191612,clicks:2390,ctr:0.2006},{date:'2026-04-03',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-04',bucket:'b2',prints:1420622,clicks:2520,ctr:0.1774},{date:'2026-04-04',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-05',bucket:'b2',prints:1407637,clicks:2544,ctr:0.1807},{date:'2026-04-05',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-06',bucket:'b2',prints:9761909,clicks:5837,ctr:0.0598},{date:'2026-04-06',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-07',bucket:'b2',prints:2381924,clicks:3367,ctr:0.1414},{date:'2026-04-07',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-08',bucket:'b2',prints:2125141,clicks:3336,ctr:0.157},{date:'2026-04-08',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-09',bucket:'b2',prints:6802820,clicks:4410,ctr:0.0648},{date:'2026-04-09',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-10',bucket:'b2',prints:9433073,clicks:5046,ctr:0.0535},{date:'2026-04-10',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-11',bucket:'b2',prints:7561833,clicks:4462,ctr:0.059},{date:'2026-04-11',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-12',bucket:'b2',prints:6626883,clicks:4577,ctr:0.0691},{date:'2026-04-12',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-13',bucket:'b2',prints:3427014,clicks:4224,ctr:0.1233},{date:'2026-04-13',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-14',bucket:'b2',prints:3198690,clicks:4240,ctr:0.1326},{date:'2026-04-14',bucket:'b3',prints:0,clicks:0,ctr:0},{date:'2026-04-15',bucket:'b2',prints:3525383,clicks:4988,ctr:0.1415},{date:'2026-04-16',bucket:'b2',prints:3215937,clicks:3871,ctr:0.1204},{date:'2026-04-17',bucket:'b2',prints:3132632,clicks:3902,ctr:0.1246},{date:'2026-04-18',bucket:'b2',prints:2693797,clicks:3489,ctr:0.1295},{date:'2026-04-19',bucket:'b2',prints:2842209,clicks:3868,ctr:0.1361},{date:'2026-04-20',bucket:'b2',prints:1859215,clicks:2742,ctr:0.1475},{date:'2026-04-20',bucket:'b3',prints:18268291,clicks:7868,ctr:0.0431},{date:'2026-04-21',bucket:'b2',prints:1795464,clicks:2574,ctr:0.1434},{date:'2026-04-21',bucket:'b3',prints:16123501,clicks:6180,ctr:0.0383},{date:'2026-04-22',bucket:'b2',prints:1741181,clicks:2400,ctr:0.1378},{date:'2026-04-22',bucket:'b3',prints:14020195,clicks:4738,ctr:0.0338},{date:'2026-04-23',bucket:'b2',prints:1723969,clicks:2284,ctr:0.1325},{date:'2026-04-23',bucket:'b3',prints:12931431,clicks:4176,ctr:0.0323},{date:'2026-04-24',bucket:'b2',prints:1891004,clicks:2381,ctr:0.1259},{date:'2026-04-24',bucket:'b3',prints:14256686,clicks:4452,ctr:0.0312},{date:'2026-04-25',bucket:'b2',prints:1418029,clicks:2037,ctr:0.1437},{date:'2026-04-25',bucket:'b3',prints:10192689,clicks:3121,ctr:0.0306},{date:'2026-04-26',bucket:'b2',prints:1372373,clicks:2061,ctr:0.1502},{date:'2026-04-26',bucket:'b3',prints:8953403,clicks:3206,ctr:0.0358},{date:'2026-04-27',bucket:'b2',prints:1577250,clicks:2202,ctr:0.1396},{date:'2026-04-27',bucket:'b3',prints:2400695,clicks:1150,ctr:0.0479},{date:'2026-04-28',bucket:'b2',prints:1530654,clicks:2204,ctr:0.144},{date:'2026-04-28',bucket:'b3',prints:2176071,clicks:896,ctr:0.0412},{date:'2026-04-29',bucket:'b2',prints:1371828,clicks:1947,ctr:0.1419},{date:'2026-04-29',bucket:'b3',prints:2067805,clicks:749,ctr:0.0362},{date:'2026-04-30',bucket:'b2',prints:1208064,clicks:1853,ctr:0.1534},{date:'2026-04-30',bucket:'b3',prints:1750843,clicks:520,ctr:0.0297},{date:'2026-05-01',bucket:'b2',prints:1439897,clicks:2657,ctr:0.1845},{date:'2026-05-01',bucket:'b3',prints:1565849,clicks:649,ctr:0.0414},{date:'2026-05-02',bucket:'b2',prints:1509258,clicks:2792,ctr:0.185},{date:'2026-05-02',bucket:'b3',prints:1768340,clicks:689,ctr:0.039},{date:'2026-05-03',bucket:'b2',prints:1546847,clicks:2819,ctr:0.1822},{date:'2026-05-03',bucket:'b3',prints:1818567,clicks:751,ctr:0.0413},{date:'2026-05-04',bucket:'b2',prints:1630824,clicks:3221,ctr:0.1975},{date:'2026-05-04',bucket:'b3',prints:16503863,clicks:6597,ctr:0.04},{date:'2026-05-05',bucket:'b2',prints:2131175,clicks:4068,ctr:0.1909},{date:'2026-05-05',bucket:'b3',prints:19654400,clicks:12076,ctr:0.0614},{date:'2026-05-06',bucket:'b2',prints:1761641,clicks:3155,ctr:0.1791},{date:'2026-05-06',bucket:'b3',prints:20088957,clicks:9120,ctr:0.0454},{date:'2026-05-07',bucket:'b2',prints:1764371,clicks:2590,ctr:0.1468},{date:'2026-05-07',bucket:'b3',prints:21270644,clicks:11132,ctr:0.0523},{date:'2026-05-08',bucket:'b2',prints:2462159,clicks:3335,ctr:0.1355},{date:'2026-05-08',bucket:'b3',prints:19746168,clicks:10033,ctr:0.0508},{date:'2026-05-09',bucket:'b2',prints:2518277,clicks:2988,ctr:0.1187},{date:'2026-05-09',bucket:'b3',prints:16635841,clicks:7593,ctr:0.0456},{date:'2026-05-10',bucket:'b2',prints:1554134,clicks:2237,ctr:0.1439},{date:'2026-05-10',bucket:'b3',prints:17703338,clicks:11777,ctr:0.0665},{date:'2026-05-11',bucket:'b1',prints:21828576,clicks:17084,ctr:0.0783},{date:'2026-05-11',bucket:'b2',prints:2194642,clicks:5252,ctr:0.2393},{date:'2026-05-11',bucket:'b3',prints:1856692,clicks:15121,ctr:0.8144},{date:'2026-05-12',bucket:'b1',prints:111503,clicks:303,ctr:0.2717},{date:'2026-05-12',bucket:'b2',prints:1670346,clicks:3853,ctr:0.2307},{date:'2026-05-12',bucket:'b3',prints:674818,clicks:4746,ctr:0.7033},{date:'2026-05-13',bucket:'b1',prints:2095688,clicks:13036,ctr:0.622},{date:'2026-05-13',bucket:'b2',prints:1819890,clicks:8374,ctr:0.4601},{date:'2026-05-13',bucket:'b3',prints:206712,clicks:1273,ctr:0.6158},{date:'2026-05-14',bucket:'b1',prints:16832174,clicks:19541,ctr:0.1161},{date:'2026-05-14',bucket:'b2',prints:1733575,clicks:2418,ctr:0.1395},{date:'2026-05-14',bucket:'b3',prints:162919,clicks:731,ctr:0.4487},{date:'2026-05-15',bucket:'b1',prints:1155717,clicks:5839,ctr:0.5052},{date:'2026-05-15',bucket:'b2',prints:1626274,clicks:1832,ctr:0.1127},{date:'2026-05-15',bucket:'b3',prints:178714,clicks:772,ctr:0.432},{date:'2026-05-16',bucket:'b1',prints:12471787,clicks:10115,ctr:0.0811},{date:'2026-05-16',bucket:'b2',prints:1670369,clicks:1930,ctr:0.1155},{date:'2026-05-16',bucket:'b3',prints:284374,clicks:1174,ctr:0.4128},{date:'2026-05-17',bucket:'b1',prints:1450050,clicks:6801,ctr:0.469},{date:'2026-05-17',bucket:'b2',prints:1521817,clicks:1829,ctr:0.1202},{date:'2026-05-17',bucket:'b3',prints:353524,clicks:1616,ctr:0.4571},{date:'2026-05-18',bucket:'b1',prints:1749449,clicks:5235,ctr:0.2992},{date:'2026-05-18',bucket:'b2',prints:1244021,clicks:1627,ctr:0.1308},{date:'2026-05-18',bucket:'b3',prints:509644,clicks:1499,ctr:0.2941},{date:'2026-05-19',bucket:'b1',prints:15280866,clicks:12369,ctr:0.0809},{date:'2026-05-19',bucket:'b2',prints:1213420,clicks:1799,ctr:0.1483},{date:'2026-05-19',bucket:'b3',prints:25226,clicks:62,ctr:0.2458},{date:'2026-05-20',bucket:'b1',prints:2816202,clicks:11797,ctr:0.4189},{date:'2026-05-20',bucket:'b2',prints:1433091,clicks:2510,ctr:0.1751},{date:'2026-05-20',bucket:'b3',prints:43180,clicks:103,ctr:0.2385},{date:'2026-05-21',bucket:'b1',prints:15015544,clicks:13786,ctr:0.0918},{date:'2026-05-21',bucket:'b2',prints:1320125,clicks:2508,ctr:0.19},{date:'2026-05-21',bucket:'b3',prints:43222,clicks:93,ctr:0.2152},{date:'2026-05-22',bucket:'b1',prints:15007810,clicks:11518,ctr:0.0767},{date:'2026-05-22',bucket:'b2',prints:1482911,clicks:2530,ctr:0.1706},{date:'2026-05-22',bucket:'b3',prints:38517,clicks:88,ctr:0.2285},{date:'2026-05-23',bucket:'b1',prints:12150593,clicks:9718,ctr:0.08},{date:'2026-05-23',bucket:'b2',prints:1497054,clicks:2496,ctr:0.1667},{date:'2026-05-23',bucket:'b3',prints:33849,clicks:55,ctr:0.1625},{date:'2026-05-24',bucket:'b1',prints:11348409,clicks:9702,ctr:0.0855},{date:'2026-05-24',bucket:'b2',prints:1502020,clicks:2691,ctr:0.1792},{date:'2026-05-24',bucket:'b3',prints:36536,clicks:70,ctr:0.1916},{date:'2026-05-25',bucket:'b1',prints:6380,clicks:19,ctr:0.2978},{date:'2026-05-25',bucket:'b2',prints:7262436,clicks:3786,ctr:0.0521},{date:'2026-05-25',bucket:'b3',prints:105,clicks:1,ctr:0.9524},{date:'2026-05-26',bucket:'b2',prints:8918653,clicks:3827,ctr:0.0429},{date:'2026-05-26',bucket:'b3',prints:18054,clicks:34,ctr:0.1883},{date:'2026-05-27',bucket:'b2',prints:7898579,clicks:3566,ctr:0.0451},{date:'2026-05-27',bucket:'b3',prints:46081,clicks:98,ctr:0.2127},{date:'2026-05-28',bucket:'b2',prints:7681311,clicks:3369,ctr:0.0439},{date:'2026-05-28',bucket:'b3',prints:46413,clicks:99,ctr:0.2133},{date:'2026-05-29',bucket:'b2',prints:7463343,clicks:3354,ctr:0.0449},{date:'2026-05-29',bucket:'b3',prints:41988,clicks:101,ctr:0.2405},{date:'2026-05-30',bucket:'b2',prints:6454020,clicks:3230,ctr:0.05},{date:'2026-05-30',bucket:'b3',prints:38785,clicks:89,ctr:0.2295},{date:'2026-05-31',bucket:'b2',prints:7001209,clicks:3924,ctr:0.056},{date:'2026-05-31',bucket:'b3',prints:44030,clicks:109,ctr:0.2476},{date:'2026-06-01',bucket:'b1',prints:5910238,clicks:25560,ctr:0.4325},{date:'2026-06-01',bucket:'b2',prints:1000027,clicks:1671,ctr:0.1671},{date:'2026-06-01',bucket:'b3',prints:7382417,clicks:2636,ctr:0.0357},{date:'2026-06-02',bucket:'b1',prints:5501394,clicks:24968,ctr:0.4538},{date:'2026-06-02',bucket:'b2',prints:1336341,clicks:2129,ctr:0.1593},{date:'2026-06-02',bucket:'b3',prints:7096282,clicks:2798,ctr:0.0394},{date:'2026-06-03',bucket:'b1',prints:198079,clicks:1233,ctr:0.6225},{date:'2026-06-03',bucket:'b2',prints:38792,clicks:68,ctr:0.1753},{date:'2026-06-03',bucket:'b3',prints:224438,clicks:126,ctr:0.0561}];
 // ── State ───────────────────────────────────────────────────────────────
 var LANDING=[], CAMPANAS_DATA={}, MS={};
 var filtered=[], period='all', selMonths=[];
@@ -1754,20 +1755,18 @@ function updateFunnelChart(metric) {
 // ── Buckets tab ──────────────────────────────────────────────────────────
 var BUCKETS_DEF = [
   {
-    id: 'b1', label: 'Bucket 1 — T1/T2/T3', color: '#1d6fa4', emoji: '📣',
-    desc: 'Landing general · tráfico de T1/T2/T3 (LDB, HS, DDP, etc.)',
-    source: 'landing', containers: null
+    id: 'b1', msId: 'b1', label: 'Bucket 1 — T1/T2/T3', color: '#1d6fa4', emoji: '📣',
+    desc: 'Campañas HotSale · DDP · Liquidación · tráfico T1/T2/T3',
+    containers: null
   },
   {
-    id: 'b2', label: 'Bucket 2 — Esenciales', color: '#e91e8c', emoji: '✨',
-    desc: 'Esenciales de Belleza · 45% off + 12 csi',
-    source: 'containers',
+    id: 'b2', msId: 'b2', label: 'Bucket 2 — Esenciales / AO', color: '#e91e8c', emoji: '✨',
+    desc: 'AO Esenciales de Belleza · Lanzamiento de marcas',
     containers: ['MK AO BEAUTY 2026 BEAUTY Belleza']
   },
   {
-    id: 'b3', label: 'Bucket 3 — Categorías', color: '#7c3aed', emoji: '🗂️',
+    id: 'b3', msId: 'b3', label: 'Bucket 3 — Categorías', color: '#7c3aed', emoji: '🗂️',
     desc: 'Fragancias · Make Up · Cuidado de la Piel · Electrobeauty · Tendencias · Belleza Profesional · K-Beauty',
-    source: 'containers',
     containers: [
       'MK AO BEAUTY 2026 BEAUTY Fragancias',
       'MK AO BEAUTY 2026 BEAUTY Maquillaje',
@@ -1792,49 +1791,50 @@ var B3_MS_LABELS = {
 };
 
 function getBucketData(bucket) {
-  var d = filtered;
-  if (!d.length) return null;
-  if (bucket.source === 'landing') {
+  if (!filtered.length) return null;
+  var startDate = filtered[filtered.length-1].date;
+  var endDate   = filtered[0].date;
+
+  // MS data from RAW_MS_BUCKETS
+  var msRows = (typeof RAW_MS_BUCKETS !== 'undefined' ? RAW_MS_BUCKETS : []).filter(function(r){
+    return r.date >= startDate && r.date <= endDate && r.bucket === bucket.msId;
+  });
+  var totPrints = msRows.reduce(function(a,r){ return a+r.prints; },0);
+  var totClicks = msRows.reduce(function(a,r){ return a+r.clicks; },0);
+  var avgCtr    = totPrints > 0 ? Math.round(totClicks/totPrints*10000)/100 : 0;
+
+  // For B1 also get landing totals as context
+  var landingCtx = null;
+  if (bucket.msId === 'b1') {
+    var d = filtered;
     var totSes = d.reduce(function(a,r){ return a+r.sessions; },0);
-    return {
+    landingCtx = {
       sessions: totSes,
-      nmv:    d.reduce(function(a,r){ return a+r.nmv;    },0),
-      orders: d.reduce(function(a,r){ return a+r.orders; },0),
-      buyers: d.reduce(function(a,r){ return a+r.buyers; },0),
-      ctr: totSes>0?Math.round(d.reduce(function(a,r){return a+r.ctr*r.sessions;},0)/totSes*100)/100:0,
-      cvr: totSes>0?Math.round(d.reduce(function(a,r){return a+r.cvr*r.sessions;},0)/totSes*100)/100:0,
-      rows: null
+      nmv: d.reduce(function(a,r){ return a+r.nmv; },0),
+      cvr: totSes>0?Math.round(d.reduce(function(a,r){return a+r.cvr*r.sessions;},0)/totSes*100)/100:0
     };
   }
-  // Container source
-  var startDate = filtered[filtered.length-1] ? filtered[filtered.length-1].date : '2000-01-01';
-  var endDate   = filtered[0] ? filtered[0].date : '9999-12-31';
+
+  // Container breakdown for display rows
   var contRows = (RAW_CONTAINERS||[]).filter(function(r){
     return r.date >= startDate && r.date <= endDate &&
-           bucket.containers.indexOf(r.container) > -1;
+           bucket.containers && bucket.containers.indexOf(r.container) > -1;
   });
-  if (!contRows.length) return null;
-  var totSes = contRows.reduce(function(a,r){ return a+r.sessions; },0);
-  // group by container
   var byName = {};
-  contRows.forEach(function(r) {
-    if (!byName[r.container]) byName[r.container]={container:r.container,sessions:0,nmv:0,orders:0,buyers:0,ctr_w:0,cvr_w:0};
+  contRows.forEach(function(r){
+    if (!byName[r.container]) byName[r.container]={container:r.container,sessions:0,nmv:0,ctr_w:0,w:0};
     byName[r.container].sessions+=r.sessions; byName[r.container].nmv+=r.nmv;
-    byName[r.container].orders+=r.orders; byName[r.container].buyers+=r.buyers;
-    byName[r.container].ctr_w+=r.ctr*r.sessions; byName[r.container].cvr_w+=r.cvr*r.sessions;
+    byName[r.container].ctr_w+=r.ctr*r.sessions; byName[r.container].w+=r.sessions;
   });
-  Object.values(byName).forEach(function(c){
-    c.ctr=c.sessions>0?Math.round(c.ctr_w/c.sessions*100)/100:0;
-    c.cvr=c.sessions>0?Math.round(c.cvr_w/c.sessions*100)/100:0;
-  });
+  Object.values(byName).forEach(function(c){ c.ctr=c.w>0?Math.round(c.ctr_w/c.w*100)/100:0; });
+
+  if (!totPrints && !contRows.length) return null;
   return {
-    sessions: totSes,
-    nmv:    contRows.reduce(function(a,r){ return a+r.nmv;    },0),
-    orders: contRows.reduce(function(a,r){ return a+r.orders; },0),
-    buyers: contRows.reduce(function(a,r){ return a+r.buyers; },0),
-    ctr: totSes>0?Math.round(contRows.reduce(function(a,r){return a+r.ctr*r.sessions;},0)/totSes*100)/100:0,
-    cvr: totSes>0?Math.round(contRows.reduce(function(a,r){return a+r.cvr*r.sessions;},0)/totSes*100)/100:0,
-    rows: Object.values(byName).sort(function(a,b){return b.sessions-a.sessions;})
+    prints: totPrints,
+    clicks: totClicks,
+    ctr: avgCtr,
+    landingCtx: landingCtx,
+    rows: Object.values(byName).sort(function(a,b){ return b.sessions-a.sessions; })
   };
 }
 
@@ -1845,24 +1845,29 @@ function renderBuckets() {
   var cardsHtml = bucketData.map(function(bd) {
     var b = bd.def; var d = bd.data;
     var noData = !d;
-    return '<div style="background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden">' +
-      '<div style="background:'+b.color+';padding:12px 16px;display:flex;align-items:center;gap:10px">' +
-        '<span style="font-size:22px">'+b.emoji+'</span>' +
-        '<div><div style="color:#fff;font-weight:700;font-size:13px">'+escHTML(b.label)+'</div>' +
-        '<div style="color:rgba(255,255,255,.7);font-size:10px;margin-top:2px">'+escHTML(b.desc)+'</div></div>' +
-      '</div>' +
-      '<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1px;background:var(--border)">' +
-        ['Sesiones','NMV','CTR','CVR'].map(function(k,i){
-          var v = noData ? '–' : [fNum(d.sessions), fMoney(d.nmv), d.ctr.toFixed(2)+'%', d.cvr.toFixed(2)+'%'][i];
-          return '<div style="background:#fff;padding:10px 12px"><div style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px">'+k+'</div>' +
-            '<div style="font-size:17px;font-weight:700;color:'+(noData?'var(--muted)':b.color)+'">'+v+'</div></div>';
-        }).join('') +
-      '</div>' +
-      (d && d.rows ? '<div style="padding:10px 14px 12px">' +
-        '<div style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">MSs activos</div>' +
+    var msKpis = [
+      { k: 'Prints MS',  v: noData ? '–' : fNum(d.prints)  },
+      { k: 'Clicks MS',  v: noData ? '–' : fNum(d.clicks)  },
+      { k: 'CTR MS',     v: noData ? '–' : (d.ctr.toFixed(2)+'%') }
+    ];
+    // B1 adds landing context
+    if (b.msId === 'b1' && d && d.landingCtx) {
+      msKpis.push({ k: 'Ses. Landing', v: fNum(d.landingCtx.sessions) });
+    }
+    var kpiGrid = msKpis.map(function(kpi){
+      return '<div style="background:#fff;padding:10px 12px">' +
+        '<div style="font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px">'+kpi.k+'</div>' +
+        '<div style="font-size:17px;font-weight:700;color:'+(noData?'var(--muted)':b.color)+'">'+kpi.v+'</div></div>';
+    }).join('');
+
+    var rowsHtml = '';
+    if (d && d.rows && d.rows.length) {
+      var maxSes = d.rows[0].sessions || 1;
+      rowsHtml = '<div style="padding:10px 14px 12px">' +
+        '<div style="font-size:10px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px">Containers activos</div>' +
         d.rows.map(function(r){
           var meta = B3_MS_LABELS[r.container] || {};
-          var pct = bucketData[2].data && bucketData[2].data.sessions>0 ? Math.round(r.sessions/bucketData[2].data.sessions*100) : 0;
+          var pct = Math.round(r.sessions/maxSes*100);
           return '<div style="display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid #f3f4f6">' +
             '<div style="flex:1;min-width:0">' +
               '<div style="font-size:11px;font-weight:600;color:var(--text)">'+escHTML(meta.label||r.container)+'</div>' +
@@ -1871,19 +1876,29 @@ function renderBuckets() {
             '</div>' +
             '<div style="text-align:right;flex-shrink:0">' +
               '<div style="font-size:12px;font-weight:700">'+fNum(r.sessions)+'</div>' +
-              '<div style="font-size:10px;color:var(--muted)">CTR '+r.ctr.toFixed(2)+'% · CVR '+r.cvr.toFixed(2)+'%</div>' +
+              '<div style="font-size:10px;color:var(--muted)">CTR container '+r.ctr.toFixed(2)+'%</div>' +
             '</div>' +
           '</div>';
         }).join('') +
-      '</div>' : '') +
-      (noData ? '<div style="padding:12px 16px;font-size:11px;color:var(--muted);font-style:italic">Sin datos para el período</div>' : '') +
+      '</div>';
+    }
+
+    return '<div style="background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden">' +
+      '<div style="background:'+b.color+';padding:12px 16px;display:flex;align-items:center;gap:10px">' +
+        '<span style="font-size:22px">'+b.emoji+'</span>' +
+        '<div><div style="color:#fff;font-weight:700;font-size:13px">'+escHTML(b.label)+'</div>' +
+        '<div style="color:rgba(255,255,255,.7);font-size:10px;margin-top:2px">'+escHTML(b.desc)+'</div></div>' +
+      '</div>' +
+      '<div style="display:grid;grid-template-columns:repeat('+msKpis.length+',1fr);gap:1px;background:var(--border)">' + kpiGrid + '</div>' +
+      rowsHtml +
+      (noData ? '<div style="padding:12px 16px;font-size:11px;color:var(--muted);font-style:italic">Sin datos MS para el período</div>' : '') +
     '</div>';
   }).join('');
 
   // Comparison chart data
-  var labels = bucketData.map(function(bd){ return bd.def.label.split(' — ')[1]; });
-  var sessions = bucketData.map(function(bd){ return bd.data ? bd.data.sessions : 0; });
-  var nmvs     = bucketData.map(function(bd){ return bd.data ? bd.data.nmv     : 0; });
+  var labels  = bucketData.map(function(bd){ return bd.def.label.split(' — ')[1]; });
+  var sessions = bucketData.map(function(bd){ return bd.data ? bd.data.prints : 0; });
+  var nmvs     = bucketData.map(function(bd){ return bd.data ? bd.data.clicks : 0; });
   var colors   = BUCKETS_DEF.map(function(b){ return b.color; });
 
   var html =
@@ -1891,8 +1906,8 @@ function renderBuckets() {
     '<span class="sec-sub">Período seleccionado · T1/T2/T3 desde landing · Buckets 2 y 3 desde containers</span></div>' +
     '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px">' + cardsHtml + '</div>' +
     '<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">' +
-      '<div class="chart-card"><div class="cc-title">Sesiones por bucket</div><canvas id="bucketsC" height="120"></canvas></div>' +
-      '<div class="chart-card"><div class="cc-title">NMV por bucket</div><canvas id="bucketsNmvC" height="120"></canvas></div>' +
+      '<div class="chart-card"><div class="cc-title">Prints MS por bucket</div><canvas id="bucketsC" height="120"></canvas></div>' +
+      '<div class="chart-card"><div class="cc-title">Clicks MS por bucket</div><canvas id="bucketsNmvC" height="120"></canvas></div>' +
     '</div>';
 
   setHtml(html);
