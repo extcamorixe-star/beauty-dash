@@ -1852,7 +1852,6 @@ function getCampMSData(campId, start, end) {
   var clicks = rows.reduce(function(a,r){ return a+r.clicks; },0);
   var ctr = prints > 0 ? Math.round(clicks/prints*10000)/100 : 0;
   return { cat:'Beauty MS', prints:prints, clicks:clicks, ctr:ctr };
-};
 }
 
 function getSiteCTRBenchmark(start, end) {
