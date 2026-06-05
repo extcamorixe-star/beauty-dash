@@ -964,7 +964,19 @@ function renderCampGrid(){
           '<div class="camp-kpi"><div class="camp-kpi-label">CTR</div><div class="camp-kpi-val">'+fPct(t26.ctr)+'</div></div>'+
           '<div class="camp-kpi"><div class="camp-kpi-label">CVR</div><div class="camp-kpi-val">'+fPct(t26.cvr)+'</div></div>'+
           '</div>'+
-          '<div style="margin-top:8px;text-align:right"><span style="font-size:10px;color:var(--pink);font-weight:600">Ver detalle →</span></div></div>';
+                    (function(){
+            var msD=getCampMSData(c.id,c.start,c.end);
+            var sb=getSiteCTRBenchmark(c.start,c.end);
+            if(!msD) return '';
+            var diff=sb!=null?Math.round((msD.ctr-sb)*100)/100:null;
+            var dStr=diff==null?'':(diff>=0?'▲ +'+diff.toFixed(2)+'pp':'▼ '+Math.abs(diff).toFixed(2)+'pp')+' vs prom.';
+            var dCol=diff==null?'#6b7280':(diff>=0?'#00a650':'#e53e3e');
+            return '<div style="margin-top:8px;padding:7px 10px;background:#f9fafb;border-radius:6px;display:flex;align-items:center;justify-content:space-between">'+
+              '<div><div style="font-size:9px;font-weight:700;color:#6b7280;text-transform:uppercase">CTR MS Beauty</div>'+
+              '<div style="font-size:16px;font-weight:700;color:#e91e8c">'+msD.ctr.toFixed(2)+'%</div></div>'+
+              (diff!=null?'<span style="font-size:11px;font-weight:700;color:'+dCol+'">'+dStr+'</span>':'')+
+            '</div>';
+          })()+'<div style="margin-top:8px;text-align:right"><span style="font-size:10px;color:var(--pink);font-weight:600">Ver detalle →</span></div></div>';
       } else {
         bodyHtml='<div class="camp-no-data-msg">Sin datos todavía – campaña próxima o pendiente</div>';
       }
