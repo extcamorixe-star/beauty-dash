@@ -1845,14 +1845,14 @@ var CAMP_MS_CAT = {
 };
 
 function getCampMSData(campId, start, end) {
-  var cat = CAMP_MS_CAT[campId];
-  if (!cat || typeof RAW_MS_CATEGORIAS === 'undefined') return null;
-  var rows = RAW_MS_CATEGORIAS.filter(function(r){ return r.date >= start && r.date <= end && r.cat === cat; });
+  if (typeof RAW_MS_BEAUTY === 'undefined') return null;
+  var rows = RAW_MS_BEAUTY.filter(function(r){ return r.date >= start && r.date <= end; });
   if (!rows.length) return null;
   var prints = rows.reduce(function(a,r){ return a+r.prints; },0);
   var clicks = rows.reduce(function(a,r){ return a+r.clicks; },0);
   var ctr = prints > 0 ? Math.round(clicks/prints*10000)/100 : 0;
-  return { cat:cat, prints:prints, clicks:clicks, ctr:ctr };
+  return { cat:'Beauty MS', prints:prints, clicks:clicks, ctr:ctr };
+};
 }
 
 function getSiteCTRBenchmark(start, end) {
